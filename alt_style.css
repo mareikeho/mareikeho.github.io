@@ -84,9 +84,7 @@ html {
     width: 100%; 
     height: 100%; 
     border-radius: 50%;
-    /* object-fit: contain;  */
     object-fit: cover;
-    /* padding-bottom: 2rem; */
     margin-bottom: 2rem;
   }
 
@@ -148,6 +146,11 @@ html {
     background-color: #4A5A3E;
     justify-content: center;
   }
+
+.experience-section .section-title-light {
+  border-bottom: 3px solid #fff;
+  margin-bottom: 2rem;
+}
   
   .job-subsection{
     position:relative;
@@ -204,6 +207,11 @@ html {
     padding:7em 0 7em 0;
     background-color: #fff;
     justify-content: center;
+  }
+
+  .education-section .section-title-dark {
+    border-bottom: 3px solid #4A5A3E;
+    margin-bottom: 2rem;
   }
   
   .edu-subsection{
@@ -263,12 +271,17 @@ html {
     color: #fff;
     justify-content: center;
   }
+
+  .samples-intro {
+    border-bottom: 3px solid #fff;
+    margin-bottom: 2rem;
+  }
   
   .samples-subsection{
     position:relative;
-    padding:1.5em 0 1.5em 0;
+    padding:1.5rem 0 2rem 0;
     border-bottom:1px solid #fff;
-    color: #fff
+    color: #fff; 
   }
   
   .samples-subsection.last{
@@ -278,7 +291,8 @@ html {
   .samples-title {
     font-weight:700;
     opacity:0.8;
-    font-size:1em}
+    font-size:1em
+  }
   
   .samples-subsection:hover>.extended-details,
   .samples-subsection:active>.extended-details{
@@ -297,12 +311,7 @@ html {
   
   
   /* ARBEITSPROBEN - MODALS */
-  
-  :root {
-    --modal-duration: 1s;
-    --modal-color: #fff;
-  }
-  
+ 
   .button {
     background: #4A5A3E;
     padding: 0.8em 1.5em;
@@ -320,80 +329,33 @@ html {
     background: #fff;
     color: #4A5A3E;
   }
+
   
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 1);
-  }
-  
-  .modal-content {
-    margin: 10% auto;
-    width: 60%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
-  
-  .modal-header h2,
-  .modal-footer h3 {
-    margin: 0;
-  }
-  
-  .modal-header {
-    background: var(--modal-color);
-    padding: 15px;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  .modal-body {
-    padding: 10px 20px;
-    height: 60vh;
-    background: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  .modal-footer {
-    background: var(--modal-color);
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  .close {
-    color: #ccc;
-    float: right;
-    font-size: 30px;
-    color: #fff;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  
+/* FOOTER */
+footer {
+  background-color: #fff;
+  display: flex;
+  text-align: right;
+  justify-content: center;
+  height: 3rem;
+}
+
+.cph-link {
+  width: 100%;
+  text-align: right;
+  padding-right: 4rem;
+  color: #4A5A3E;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+
+.cph-link p {
+  vertical-align: middle;
+}
+
+.cph-link a {
+  text-decoration: none;
+  color: #4A5A3E;
+}
   
   
